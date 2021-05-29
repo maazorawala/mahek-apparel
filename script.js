@@ -1,4 +1,4 @@
-
+'use strict'
 /**Loader function */
 document.onreadystatechange = () =>{
     if(document.readyState != "complete"){
@@ -24,3 +24,13 @@ function nextSlide(){
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slide showing';
 }
+
+/**opening and closing sidenav */
+let openNav = function () {
+    document.getElementById("sideNav").style.width = "576px";
+    
+}
+const closeNav = function() {
+    document.getElementById("sideNav").style.width = "0";
+}
+/**opening and closing sidenav */
