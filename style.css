@@ -86,6 +86,8 @@ a{
 }
 .navbar{
     margin-top:15px;
+    width:100vw;
+    transition:0.3s ease-out;
 }
 .nav-links{
     display: flex-end;
@@ -95,6 +97,7 @@ a{
     align-self: right;
     justify-self:right;
     margin-top:-5%;
+    transition:0.3s ease-out;
 }
 .nav-links a{
     font-family: 'Poppins', sans-serif;
@@ -118,7 +121,7 @@ a.left:after{
     transform: scaleX(0);
     height: 2px;
     bottom: 0;
-    left: 0;
+    right: 0;
     background: rgb(255,255,255);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
@@ -349,11 +352,10 @@ footer a{
     font-size:3rem;
     line-height:10px;
 }
-
-#open-navbar{
-    display:none;
-}
 .closebtn{
+        display:none;
+    }
+#open-navbar{
     display:none;
 }
 @media screen and (max-width:576px){
@@ -362,43 +364,44 @@ footer a{
         overflow-x: none;
         margin:0;
     }
-    .nav-links{
-        margin-top:2%;
-        background:rgba(0, 0, 0, 0.918);
+    .closebtn{
+        display:block;
     }
-    #open-navbar{
-    display:block;
-}
-.closebtn{
+#open-navbar{
     display:block;
 }
 
-.nav-links a{
-    font-size:5vh;
+    .mysideNav a{
+    font-size:4.6vh;
     text-decoration:none;
-
+    text-decoration: none;
     display: block;
-    padding:6vh;
+    padding: 8vh;
     text-align: center;
+    background:#000;
     color: rgba(255,255,255,0.5 );
     transition:0.3s ease-out;
 }
-.nav-links{
+.mysideNav{
+    border:2px solid black;
     display:block;  
     z-index: 1;
     transition: 0.5s;
     overflow-x: hidden;
     width: 0px;
-    top: -10px;
+    top: 0;
     left: 0;
     position: fixed;
-    height: 100%;
+    height: 100vh;
 }
-.nav-links{
+#sideNav{
     position: fixed;
-    z-index:9999;
 }
-    
+.mysideNav a:hover{
+    color: white; 
+    transition: 0.5s;
+}
+
     .slide-img img{
         height: 100%;
     }
