@@ -34,7 +34,6 @@ a{
     background:linear-gradient(rgba(0,0,0,0.4), rgb(0,0,0,0.8)) ,url(./assets/tsai-sen-yu-Axzl2n5htMM-unsplash.jpg) ;
     background-attachment: fixed;
     background-size: cover;
-    border:0.5px solid white;
 }
 #load{
     border-radius: 50%;
@@ -378,7 +377,7 @@ footer a{
     display: block;
     padding: 8vh;
     text-align: center;
-    background:#000;
+    background:rgba(0, 0, 0, 0.938);
     color: rgba(255,255,255,0.5 );
     transition:0.3s ease-out;
 }
@@ -417,5 +416,67 @@ footer a{
     margin-top:12%;
     height:50%;
     width:50%;
+    }
+    .slideshow{
+        width:100vw;
+        margin:0;
+    }
+    .slide-img img{
+        margin:0;
+        margin-left:-50px;
+    }
+    .cards{
+        width:90vw;
+    }
+
+    #c-1{
+        margin-left: 0%;
+        margin:20px;
+    }
+    #c-1 h2{
+        font-size:1.5rem;
+        margin-left:-15%;
+        text-align: center;
+    }
+    #c-2{
+        margin-left: 0%;
+        margin:20px;
+    }
+    #c-3{
+        margin-left: 0%;
+        margin:20px;
+        height: fit-content;
+    }
+    #c-3 h1{
+        font-size:2.5rem;
+        line-height: 30px;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    justify-self:center;
+    }
+    .cards-cascad{
+        display: block;
+    }
+    .footer-1 ul li img{
+        width:85vw;
+    }
+    footer{
+        display:block;
+    }
+    .footer-1 , .footer-2{
+    width:100vw;
+    height:80%;
 }
+    .footer-2{
+        height:100%;
+    }
+    .footer-2 li{
+        margin-left:-10%;
+    }
+    .icon-maps{
+        width:100%;
+    }
 }
